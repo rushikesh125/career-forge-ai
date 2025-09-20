@@ -141,7 +141,7 @@ const GenerateSkillsSuggestion = async (resumeData) => {
     
     try {
       const result = await model.generateContent(
-        `${resData} analyze this resume and suggest Skills to Imporve with its Links and Learning Path ( Syllabus )`
+        `${resData} analyze this resume and suggest Skills ( at least 3 that user should learn to get light payling job , so much know to land on job ) to Imporve with its Links and Learning Path ( Syllabus )`
       );
       return result.response.text()
     } catch (error) {
