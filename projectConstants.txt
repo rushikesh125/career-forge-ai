@@ -1,0 +1,138 @@
+STATEMENT 6 :❖
+DESCRIPTION :
+The goal of this project is to develop a web-based AI-powered resume
+optimization tool that can:
+Parse resumes from different formats (PDF, DOCX, etc.).
+Compare the content with job descriptions to identify key skills, job
+requirements, and missing keywords.
+Provide personalized suggestions on improving the resume’s content,
+structure, and formatting for better alignment with job requirements.
+Offer an intuitive and user-friendly interface for job seekers, allowing them to
+upload their resumes easily and receive actionable feedback.
+➢
+There is a need for a smart, web-based tool that can assist job seekers by analyzing
+their resumes, comparing them against job descriptions, and providing AI-driven
+suggestions to improve content, formatting, and alignment with specific job roles. This
+tool should be able to identify missing skills or keywords, propose better phrasing, and
+ensure the resume is tailored to specific job opportunities, improving the chances of
+passing through Applicant Tracking Systems (ATS) and impressing recruiters.
+
+
+
+theme-color -> bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500  bg-clip-text text-transparent
+
+
+const resumeSchema = {
+  personalInfo: {
+    name: "", // Full name
+    email: "",
+    phone: "",
+    linkedin: "",
+    github: "",
+    location: ""
+  },
+  summary: "", // Brief professional summary
+  education: [
+    {
+      degree: "",
+      school: "",
+      location: "",
+      graduation: "",
+      courses: [] // List of relevant courses
+    }
+  ],
+  skills: {}, // Dynamic skills section based on the user's field
+  projects: [
+    {
+      title: "",
+      details: [] // List of project details
+    }
+  ],
+  experience: [
+    {
+      title: "",
+      company: "",
+      location: "",
+      period: "",
+      achievements: [] // List of key contributions
+    }
+  ],
+  certifications: [], // List of certifications
+  extracurricular: [] // Extracurricular activities
+};
+
+export default resumeSchema;
+
+
+// const resumeData = {
+//   personalInfo: {
+//     name: "John Doe",
+//     email: "johndoe@example.com",
+//     phone: "+1 123-456-7890",
+//     linkedin: "linkedin.com/in/johndoe",
+//     github: "github.com/johndoe",
+//     location: "New York, USA"
+//   },
+//   summary: "Motivated and detail-oriented IT student with strong knowledge of programming, software development, and troubleshooting. Passionate about technology and eager to apply academic knowledge in a practical setting.",
+//   education: {
+//     degree: "Bachelor of Science in Computer Science",
+//     school: "XYZ University",
+//     location: "New York",
+//     graduation: "May 2026",
+//     courses: [
+//       "Data Structures",
+//       "Algorithms",
+//       "Web Development",
+//       "Software Engineering",
+//       "Database Management"
+//     ]
+//   },
+//   skills: {
+//     programming: ["Python", "Java", "JavaScript", "C++"],
+//     webDev: ["HTML", "CSS", "React.js", "Node.js"],
+//     databases: ["MySQL", "MongoDB"],
+//     cloudDevOps: ["AWS", "Docker", "Git/GitHub"],
+//     os: ["Windows", "Linux"],
+//     tools: ["VS Code", "Postman", "JIRA"]
+//   },
+//   projects: [
+//     {
+//       title: "E-Commerce Website",
+//       details: [
+//         "Developed a fully functional e-commerce website using React.js, Node.js, and MongoDB",
+//         "Implemented authentication, product search, and payment integration",
+//         "Deployed on AWS with CI/CD pipelines"
+//       ]
+//     },
+//     {
+//       title: "Library Management System",
+//       details: [
+//         "Designed a web-based system to manage book inventory and user records",
+//         "Used Python (Django) for the backend and PostgreSQL as the database",
+//         "Enhanced user experience with a responsive UI using Bootstrap"
+//       ]
+//     }
+//   ],
+//   experience: [
+//     {
+//       title: "Software Development Intern",
+//       company: "ABC Tech Solutions",
+//       location: "New York",
+//       period: "Summer 2024",
+//       achievements: [
+//         "Assisted in developing an internal web application for task management",
+//         "Wrote and optimized SQL queries to improve database efficiency",
+//         "Collaborated with senior developers to debug and enhance features"
+//       ]
+//     }
+//   ],
+//   certifications: [
+//     "AWS Certified Cloud Practitioner (2024)",
+//     "Google IT Support Professional Certificate (2023)"
+//   ],
+//   extracurricular: [
+//     "Member, XYZ University Coding Club",
+//     "Participated in Hackathons and built AI-based applications",
+//     "Volunteer IT Support at local community center"
+//   ]
+// };
