@@ -71,7 +71,7 @@ const JobSuggestions = () => {
           <Button
             onClick={handleGenerateJobSuggestion}
             disabled={isLoading}
-            className={`border bg-purple-200 dark:bg-transparent border-purple-400 mx-atuo`}
+            className={`border bg-purple-700 dark:bg-transparent border-purple-400 mx-atuo`}
           >
             {isLoading ? <Loader2 className="animate-spin" /> : <CogIcon />}
 

@@ -369,7 +369,7 @@ const RenderAssistantMessage = ({ children }) => {
       return (
         <div className="space-y-6">
           {/* Header */}
-          <Card className="border-border bg-gradient-to-r from-primary/5 to-secondary/5">
+          <Card className="border-border ">
             <CardContent className="pt-6 pb-4">
               <div className="flex items-center gap-3 mb-3">
                 <Zap size={20} className="text-primary" />
@@ -389,7 +389,7 @@ const RenderAssistantMessage = ({ children }) => {
           {/* Learning Path Section */}
           {hasLearningPathContent && (
             <Card className="border-border">
-              <CardHeader className="bg-gradient-to-r from-primary/10 to-secondary/10">
+              <CardHeader className="">
                 <CardTitle className="text-lg flex items-center gap-2 text-primary">
                   <GraduationCap size={18} />
                   Personalized Learning Path
@@ -455,10 +455,10 @@ const RenderAssistantMessage = ({ children }) => {
             </Card>
           )}
 
-          {/* Career Insights Section */}
+          Career Insights Section
           {hasCareerInsightsContent && (
             <Card className="border-border">
-              <CardHeader className="bg-gradient-to-r from-green-500/10 to-emerald-500/10">
+              <CardHeader className="">
                 <CardTitle className="text-lg flex items-center gap-2 text-green-700 dark:text-green-400">
                   <TrendingUp size={18} />
                   Career Insights
