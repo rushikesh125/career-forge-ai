@@ -4,8 +4,8 @@ import React from "react";
 const ForgeBot = () => {
   return (
     <>
-      <main className="pt-20 p-4 text-gray-800 dark:text-white">
-        <div className="max-w-7xl mx-auto">
+      <main className="p-4 text-gray-800 dark:text-white">
+        <div className=" mx-auto">
           <ChatInterface/>
         </div>
       </main>

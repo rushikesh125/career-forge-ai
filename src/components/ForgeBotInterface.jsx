@@ -150,7 +150,7 @@ export default function ChatInterface() {
     }).format(new Date(timestamp));
 
   return (
-    <div className="flex flex-col h-[90vh] rounded-xl bg-background shadow-xl dark:bg-gray-800">
+    <div className="flex flex-col h-[90vh] rounded-xl bg-background shadow-xl dark:bg-gray-700 w-ful">
       <div className="flex items-center justify-between p-4 border-b">
         <h2 className="text-xl font-semibold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500 bg-clip-text text-transparent">
           Career Forge AI
