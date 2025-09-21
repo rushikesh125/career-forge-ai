@@ -79,7 +79,7 @@ const ImproveSkills = () => {
   return (
     <>
       <main className="pt-20 p-4 text-gray-800 dark:text-white">
-        <div className="max-w-7xl mx-auto">
+        <div className=" mx-auto">
           <h2 className="text-2xl font-semibold bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500  bg-clip-text text-transparent py-2 border-b-2 border-dashed border-purple-500 ">
             Suggestion To Improve Skills
           </h2>
