@@ -40,7 +40,7 @@ export default function Home() {
       ),
     },
     {
-      title: "Enter Job Description",
+      title: "Career Path Generation",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -85,7 +85,7 @@ export default function Home() {
       ),
     },
     {
-      title: "Career Forge AI Process & Result",
+      title: "Job Role Suggestions",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
@@ -142,7 +142,7 @@ export default function Home() {
       ),
     },
     {
-      title: "Suggestion for Improvement & Jobs ",
+      title: "Personalized Skill Gaps & Improvements",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
@@ -198,7 +198,7 @@ export default function Home() {
 
         <HeroSection />
         <Timeline data={timelineData}></Timeline>
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
         <CTASection />
         <Footer />
         {/* <div className="h-[10000px]"></div> */}

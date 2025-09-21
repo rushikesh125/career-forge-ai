@@ -13,51 +13,52 @@ let interval;
 
 export const CardStack = ({ offset, scaleFactor }) => {
   const cards = [
-    {
-      id: 0,
-      name: "AI-Powered Analysis",
-      icon: BrainCircuit,
-      content: (
-        <p>
-          Our advanced algorithms analyze your resume for content, structure,
-          and keywords, ensuring it aligns perfectly with job requirements.
-        </p>
-      ),
-    },
-    {
-      id: 1,
-      name: "Personalized Suggestions",
-      icon: ScanSearch,
-      content: (
-        <p>
-          Receive tailored recommendations on improving your resume's clarity,
-          impact, and ATS compatibility.
-        </p>
-      ),
-    },
-    {
-      id: 2,
-      name: "Job Matching",
-      icon: CircleCheckBig,
-      content: (
-        <p>
-          Discover relevant job openings that match your skills and experience,
-          based on your optimized resume.
-        </p>
-      ),
-    },
-    {
-      id: 3,
-      name: "User-Friendly Interface",
-      icon: Computer,
-      content: (
-        <p>
-          Easily upload your resume and job descriptions with our intuitive
-          platform – no technical skills required.
-        </p>
-      ),
-    },
-  ];
+  {
+    id: 0,
+    name: "AI-Powered Analysis",
+    icon: BrainCircuit,
+    content: (
+      <p>
+        Automatically extract and analyze key skills, education, and experience 
+        from your resume to build a strong career profile.
+      </p>
+    ),
+  },
+  {
+    id: 1,
+    name: "Personalized Suggestions",
+    icon: ScanSearch,
+    content: (
+      <p>
+        Get tailored recommendations on career paths, skill improvements, and 
+        job opportunities based on your unique profile.
+      </p>
+    ),
+  },
+  {
+    id: 2,
+    name: "Job Matching",
+    icon: CircleCheckBig,
+    content: (
+      <p>
+        Explore AI-recommended job roles and opportunities that align with 
+        your skills, experience, and career goals.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    name: "User-Friendly Interface",
+    icon: Computer,
+    content: (
+      <p>
+        Upload resumes, view insights, and interact with Forge Bot through a 
+        simple, intuitive dashboard – no technical skills required.
+      </p>
+    ),
+  },
+];
+
   const CARD_OFFSET = offset || 10;
   const SCALE_FACTOR = scaleFactor || 0.06;
   const [cardItems, setCards] = useState(cards);

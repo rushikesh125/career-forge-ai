@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-gray-600 dark:text-gray-400 max-w-sm">
-            Empowering job seekers with AI-powered resume optimization tools to land their dream jobs faster.
+            Discover the right path, build in-demand skills, and land the opportunities you deserve
             </p>
             {/* Social Links */}
             <div className="flex gap-4">
